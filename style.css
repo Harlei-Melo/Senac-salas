@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+
+    background-image: url(/images/back4edit.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.title h6 {
+    opacity: 0.8;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.subtitle h1 {
+    margin-left: 5%;
+    margin-top: 10%;
+
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+label {
+    margin-bottom: -4px;
+    margin-top: -4px;
+}
+
+input {
+    margin-top: 35px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin-left: 130px;
+}
+
+button {
+    margin-top: 125px;
+    padding: 10px 100px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin-left: 580px;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #fff;
+    transition: 0.5s;
+    background-color: #f17c0e33;
+}
+
+::placeholder {
+    color: #000;
+}
+
+.animate img {
+    width: 50px;
+    animation: anime 7s linear infinite;
+}
+
+.animate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -70px;
+
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+    70% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+
+    }
+}
+
+
+.animate img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.animate img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.animate img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+
+.animate img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+
+.animate img:nth-child(5) {
+    animation-delay: 3s;
+}
+
+.animate img:nth-child(6) {
+    width: 20px;
+    animation-delay: 6s;
+}
+
+.animate img:nth-child(7) {
+    width: 35px;
+    animation-delay: 7s;
+}
