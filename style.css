@@ -1,9 +1,7 @@
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -13,6 +11,11 @@ body {
     background-position: bottom;
     background-size: cover;
     overflow: hidden;
+}
+
+.container {
+    
+    margin-top: 80px;
 }
 
 .title h1 {
@@ -29,31 +32,35 @@ body {
 
 
 .subtitle h1 {
-    margin-left: 5%;
-    margin-top: 10%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .inputs {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     margin-top: 50px;
 
 }
 
-label {
-    margin-bottom: -4px;
-    margin-top: -4px;
-}
 
 input {
+    flex-wrap: wrap;
     margin-top: 35px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .6);
     border-radius: 7px;
     border: none;
     outline: none;
-    margin-left: 130px;
+    color: #000;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -63,15 +70,16 @@ button {
     border-radius: 7px;
     border: none;
     outline: none;
-    margin-left: 580px;
+
     color: #000;
     cursor: pointer;
+
 }
 
-button:hover{
+button:hover {
     color: #fff;
     transition: 0.5s;
-    background-color: #f17c0e33;
+    background-color: #f17c0e67;
 }
 
 ::placeholder {
@@ -90,7 +98,6 @@ button:hover{
     align-items: center;
     position: absolute;
     bottom: -70px;
-
 }
 
 @keyframes anime {
